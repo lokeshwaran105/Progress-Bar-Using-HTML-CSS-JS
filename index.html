@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <hr>
+        <ul>
+            <li><img src="assets/tick.png" alt="" height="50px" width="50px"></li>
+            <li><img src="assets/untick.png" alt="" height="50px" width="50px"></li>
+            <li><img src="assets/untick.png" alt="" height="50px" width="50px"></li>
+            <li><img src="assets/untick.png" alt="" height="50px" width="50px"></li>
+        </ul>
+        <div class="btn">
+            <button onclick="backward()">pre</button>
+            <button onclick="forward()">next</button>
+        </div>
+    </div>
+
+    <script>
+        let cnt = 1;
+        function forward() {
+            let arr = document.getElementsByTagName('img');
+            if(cnt > 3){
+                cnt = 0;
+            }
+            arr[cnt].src = 'assets/tick.png';
+            cnt++;
+        }
+        
+        function forward() {
+            let arr = document.getElementsByTagName('img');
+            if(cnt > 3){
+                cnt = 0;
+            }
+            arr[cnt].src = 'assets/tick.png';
+            cnt++;
+        }
+    </script>
+</body>
+</html>
